@@ -23,6 +23,9 @@ public class MainApp extends Application {
         Button openButton = new Button("Open Excel File");
         openButton.setOnAction(e -> openFileChooser());
 
+        monthsField = new TextField();
+        monthsField.setPromptText("Enter number of months for forecasting");
+
         Button generateButton = new Button("Generate Report");
         generateButton.setOnAction(e -> generateReport());
 
